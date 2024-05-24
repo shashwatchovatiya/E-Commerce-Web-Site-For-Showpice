@@ -1,0 +1,60 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:  0 2rem;
+  font-family: "Roboto", sans-serif;
+} */
+
+.conatiner{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:  0 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.card figure img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover figure img {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.5;
+}
+
+.Div_text div {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.text-start.Div_text:hover {
+  background-color: transparent;
+}
+
+ /* .cart-box {
+  display: none;
+} */
+/*
+.cart-main:hover .cart-box{
+  display: block;
+  font-size: small;
+  transition: 2s ease-out 100ms;
+} */
+
+.cart-box {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Prevents interaction when hidden */
+}
+
+.cart-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* Allows interaction when visible */
+}

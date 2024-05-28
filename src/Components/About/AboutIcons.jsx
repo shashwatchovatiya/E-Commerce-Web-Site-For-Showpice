@@ -10,7 +10,7 @@ function AboutIcons() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1500, // You can set a default duration for the animations
+            duration: 500, // You can set a default duration for the animations
         });
     }, []);
     return (

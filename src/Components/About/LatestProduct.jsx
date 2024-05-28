@@ -91,7 +91,7 @@ export default function LatestProduct() {
                         <img
                             src={data.img}
                             alt={data.heading}
-                            className="w-full h-64 object-contain bg-contain transition-transform duration-500"
+                            className="w-full h-64 object-cover md:object-contain md:bg-contain bg-cover transition-transform duration-500"
                         />
                         <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
                             <h2 className="text-lg font-bold">{data.heading}</h2>

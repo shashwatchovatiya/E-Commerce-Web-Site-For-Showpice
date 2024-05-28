@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react'
 import bgImage from '../../../Image/Landing-Page/background-1.png'
-import BrowserRang from './BrowserRang'
+// import BrowserRang from './ProductList'
 import FuniroFurniture from './FuniroFurniture'
 import OurProduct from './OurProduct'
 import Testimorinal from './Testimorinal'
 import AOS from 'aos';
+import Categories from './Categories'
 
 function LandingPage() {
   useEffect(() => {
@@ -19,7 +20,8 @@ function LandingPage() {
       <main className="w-full lg:h-[95vh] h-screen bg-repeat-x bg-center m-0 lg:bg-contain  bg-cover flex justify-end shadow-zinc-500 shadow-md " style={{ backgroundImage: `url(${bgImage})`, }}
         data-aos="fade-up"
         data-aos-duration="500"
-        data-aos-delay="100">
+        // data-aos-delay="100"
+        >
         <div className="md:h-80 md:w-96 w-1/2 h-1/2 bg-[#FFF3E3]  lg:mr-36 my-auto px-6 py-8 space-y-5  overflow-auto" >
           <p className='text-xs font-bold pb-5'>  New Arravial </p>
           <span className='lg:text-3xl md:text-2xl text-xl text-[#B88E2F] font-extrabold '>Discover Our</span><br />
@@ -30,7 +32,9 @@ function LandingPage() {
 
 
       {/* Browser Section */}
-      <BrowserRang />
+    <Categories />
+
+      {/* <BrowserRang /> */}
 
       {/* OurProducts Section */}
       <OurProduct />

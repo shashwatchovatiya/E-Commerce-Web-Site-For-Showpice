@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 import Heading from "../Heading"
@@ -14,10 +14,10 @@ import img5 from '../../../../Image/Changes/pen Green Ganesh/05.jpg'
 import img6 from '../../../../Image/Changes/pen Green Ganesh/06.jpg'
 import img7 from '../../../../Image/Changes/pen Green Ganesh/07.jpg'
 
+import AOS from "aos";
 
-import { IoShareSocial } from "react-icons/io5";
-import { VscArrowSwap } from "react-icons/vsc";
-import { IoIosHeartEmpty } from "react-icons/io";
+
+import Pagination from '../Pagination'
 
 const ShopingList12 = [
   {
@@ -95,10 +95,14 @@ function PenGreenGanesh() {
     console.log('Product added to cart:', product);
   };
 
-
+useEffect(() => {
+  AOS.init({
+    duration: 500, // You can set a default duration for the animations
+  });
+}, []);
 
   return (
-  <>
+    <>
       {/* Heading Section */}
       <Heading />
 
@@ -108,54 +112,52 @@ function PenGreenGanesh() {
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
           {ShopingList12.map((data) => (
             <div
-              className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out"
+              className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out  overflow-hidden"
               key={data.id}
             >
               <img
                 src={data.img}
                 alt={data.heading}
-                className="w-full h-64 object-cover transition-transform duration-500"
+                className="w-full h-64 object-fill transform transition-transform duration-500 group-hover:scale-110 "
+                data-aos="fade-up"
+                // data-aos-delay={data.aosDelay}
               />
               <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
-                <h2 className="text-lg font-bold">{data.heading}</h2>
-                <p className="text-sm">{data.title}</p>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">{data.orignialPrice} RS</p>
-                </div>
-              </div>
-              <div className="absolute hover-Property inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-4 opacity-0 group-hover:opacity-100 transform translate-y-3/4 group-hover:translate-y-0 group-hover:mb-40 transition-all duration-500 ease-in-out">
-                <div className="flex justify-center items-center">
-                  <Link to={data.link} target='_blank'>
-                    <button className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded">Buy Now</button>
-                  </Link>
-                </div>
-                <div className="flex justify-center items-center mt-4">
-                  <button
-                    onClick={() => {
-                      handleAddToCart(data);
-                      alert("Adding cart success Full ");
-                    }
-                    }
+                <h2
+                  className="text-lg font-bold"
+                  data-aos="fade-up"
+                  data-aos-delay={data.aosDelay}
+                >
+                  {data.heading}
+                </h2>
 
-                    className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded"
-                  >
-                    Add to Cart
+                <div
+                  className="flex justify-between items-center"
+                  data-aos="fade-up"
+                  //   data-aos-delay={data.aosDelay}
+                >
+                  <p className="text-sm font-bold">{data.price} RS</p>
+                  <p className="text-sm font-bold line-through">
+                    {data.orignialPrice} RS
+                  </p>
+                </div>
+                <Link
+                  to={data.link}
+                  target="_blank"
+                  className="w-full flex justify-center"
+                >
+                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
+                    Buy on Filpkart
                   </button>
-                </div>
-                <div className="flex items-center justify-around">
-                  <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoShareSocial /> Share</p>
-                  <p className="text-sm mt-2 flex gap-2 items-center text-white"><VscArrowSwap /> Compare</p>
-                  <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoIosHeartEmpty /> Like</p>
-                </div>
+                </Link>
               </div>
             </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div >
-        </>
-  )
+      <Pagination />
+    </>
+  );
 }
 
 export default PenGreenGanesh

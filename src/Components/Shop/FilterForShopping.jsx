@@ -63,7 +63,9 @@ import { RiEqualizerLine } from "react-icons/ri"
 import { PiCirclesFourBold } from "react-icons/pi"
 import { BsViewList } from "react-icons/bs"
 import { PiLineVerticalThin } from "react-icons/pi"
-import RelatedTab from './RelatedTab' // Import the RelatedTab component
+// import RelatedTab from './RelatedTab' // Import the RelatedTab component
+
+import Categories from '../LandingPage/Categories'
 
 function FilterForShopping() {
     const [showRelatedTab, setShowRelatedTab] = useState(false)
@@ -117,7 +119,7 @@ function FilterForShopping() {
                     </div>
                 </div>
             </div>
-            {showRelatedTab && <RelatedTab />} {/* Conditionally render RelatedTab */}
+            {showRelatedTab && <Categories />} {/* Conditionally render RelatedTab */}
         </>
     )
 }

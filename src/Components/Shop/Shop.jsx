@@ -5,7 +5,7 @@ import FilterForShopping from "./FilterForShopping"
 import Heading from "./Heading"
 // import Pagination from "./Pagination"
 import PaginationRounded from "./Pagination2"
-import RelatedTab from "./RelatedTab"
+// import RelatedTab from "./RelatedTab"
 import ShopingList from "./ShopingList"
 
 function Shop() {
@@ -17,7 +17,7 @@ function Shop() {
     {/* Filter path */}
     <FilterForShopping />
 
-    <RelatedTab />
+    {/* <RelatedTab /> */}
 
     {/* Shoping List  */}
     <ShopingList />

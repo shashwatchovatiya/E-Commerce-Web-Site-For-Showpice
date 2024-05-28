@@ -9,7 +9,7 @@ export default function PaginationRounded() {
 
     <Stack spacing={2}>
       {/* <Pagination count={10} shape="rounded" /> */}
-      <Pagination count={10} variant="outlined" shape="rounded" defaultPage={2} className='py-36 mx-auto' />
+      <Pagination count={10} variant="outlined" shape="rounded" defaultPage={1} className='py-36 mx-auto' />
     </Stack>
     </div>
   );

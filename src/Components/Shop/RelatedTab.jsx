@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function RelatedTab() {
     return (
-        <div className='flex overflow-auto gap-10'>
+        <div className='flex overflow-x-auto  gap-10 text-nowrap'>
 
             <div className='flex md:space-y-0 space-y-2 gap-10  justify-around items-center py-5'>
                 <Link to='/shop/t-shirt'>

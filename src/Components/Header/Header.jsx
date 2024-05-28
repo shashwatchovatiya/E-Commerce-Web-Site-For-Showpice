@@ -436,6 +436,18 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink
+                                to='about'
+                                className={({ isActive }) =>
+                                    `block py-2 pr-4 pl-3 duration-200 border-b
+                  ${isActive ? "text-orange-700" : "text-black"}
+                  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 font-semibold`
+                                }
+                            >
+                                About
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
                                 to="shop"
                                 className={({ isActive }) =>
                                     `block py-2 pr-4 pl-3 duration-200 border-b
@@ -458,18 +470,7 @@ export default function Header() {
                                 Contact
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink
-                                to='about'
-                                className={({ isActive }) =>
-                                    `block py-2 pr-4 pl-3 duration-200 border-b
-                  ${isActive ? "text-orange-700" : "text-black"}
-                  border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 font-semibold`
-                                }
-                            >
-                                About
-                            </NavLink>
-                        </li>
+                      
                     </ul>
                 </nav>
 
@@ -482,7 +483,7 @@ export default function Header() {
                                 placeholder='Search'
                                 value={searchInput}
                                 onChange={handleSearchChange}
-                                className='w-[150px] sm:w-[200px] group-hover:w-[200px] md:group-hover:w-[300px] transition-all duration-300 rounded-2xl border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary'
+                                className='w-[250px] sm:w-[200px] group-hover:w-[300px] md:group-hover:w-[300px] transition-all duration-300 rounded-2xl border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary'
                             />
                             <IoMdSearch className='text-gray-400 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3' />
                         </div>
@@ -503,7 +504,7 @@ export default function Header() {
 
                 {/* Search Results Section */}
                 {searchInput && (
-                    <div className='absolute top-16 left-0 w-full bg-white shadow-lg z-10'>
+                    <div className='relative  md:absolute top-16 left-0 w-full bg-white shadow-lg z-10'>
                         {filteredResults.length > 0 ? (
                             filteredResults.map(item => (
                                 <a

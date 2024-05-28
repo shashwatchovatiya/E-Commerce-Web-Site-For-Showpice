@@ -15,7 +15,7 @@ function Heading() {
 
 
     return (
-        <div className="w-full h-[35vh] text-center items-center flex justify-center flex-col"  style={{ backgroundImage: `url(${bgImage1})`,}}>
+        <div className="w-full h-[35vh] text-center md:text-start md:items-start conatiner items-center flex md:justify-center justify-center flex-col"  style={{ backgroundImage: `url(${bgImage1})`,}}>
             <span className='md:text-4xl text-2xl font-semibold'>
                 {newPath}
             </span>

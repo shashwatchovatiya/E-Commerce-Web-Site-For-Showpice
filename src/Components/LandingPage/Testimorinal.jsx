@@ -1,4 +1,3 @@
-// import React from 'react'
 import img1 from '../../../Image/Landing-Page/Showpice/TabelDecoration.jpg'
 import img2 from '../../../Image/Landing-Page/Showpice/WallDecoration2.jpg'
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
@@ -66,7 +65,7 @@ function Testimorinal() {
           autoplay={{ delay: 3000 }}
         >
           {ImageForSlider?.map((data, index) => (
-            <SwiperSlide className="w-1/2  flex justify-center" key={index}>
+            <SwiperSlide className="w-1/2 h-[90%] flex justify-center" key={index}>
               <img
                 src={data.img}
                 alt="Images"

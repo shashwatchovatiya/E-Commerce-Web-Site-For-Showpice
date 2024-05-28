@@ -1,6 +1,5 @@
 // import React from 'react'
 
-import AditionalInformation from "../Shop/AditionalInformation"
 import Heading from "../Shop/Heading"
 import EmailValidation from "./EmailValidation"
 
@@ -13,8 +12,7 @@ function Contact() {
       {/* Email  */}
       <EmailValidation />
 
-      {/* AditionInformation */}
-      <AditionalInformation />
+    
     </div>
   )
 }

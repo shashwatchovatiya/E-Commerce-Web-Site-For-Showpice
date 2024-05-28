@@ -4,79 +4,79 @@ import { Link } from 'react-router-dom'
 
 function RelatedTab() {
     return (
-        <>
+        <div className='flex overflow-auto gap-10'>
 
-            <div className='sm:flex justify-around items-center py-5 bg-red-200'>
+            <div className='flex md:space-y-0 space-y-2 gap-10  justify-around items-center py-5'>
                 <Link to='/shop/t-shirt'>
-                    <button>T-Shirt </button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>T-Shirt </button>
                 </Link>
                 <Link to='/shop/black-Barasingha'>
-                    <button>Black Barasingha</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Black Barasingha</button>
                 </Link>
                 <Link to='/shop/black-penthar'>
-                    <button>Black penthar</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Black penthar</button>
                 </Link>
                 <Link to='/shop/dandiya-couple'>
-                    <button>DANDIYA COUPLES</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>DANDIYA COUPLES</button>
                 </Link>
                 <Link to='/shop/elephant-set-1'>
-                    <button>ELEPHANT IN ELEPHANT BLACK RED</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>ELEPHANT IN ELEPHANT BLACK RED</button>
                 </Link>
                 <Link to='/shop/elephant-set-2'>
-                    <button>Elephant set of 2</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Elephant set of 2</button>
                 </Link>
                
            
             </div>
             {/* Part 2 */}
-            <div className='sm:flex justify-around items-center py-5 bg-red-200'>
+            <div className='flex md:space-y-0 space-y-2 gap-10  justify-around items-center sm:py-5'>
                 <Link to='/shop/engine-stand'>
-                    <button>Engine Pen Stand</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Engine Pen Stand</button>
                 </Link>
                 <Link to='/shop/ganesh-blue'>
-                    <button>GANESH BLUE</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>GANESH BLUE</button>
                 </Link>
                 <Link to='/shop/ganesh-orange'>
-                    <button>GANESH ORANGE</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>GANESH ORANGE</button>
                 </Link>
                 <Link to='/shop/ganesh-t-light'>
-                    <button>Ganesh T Light</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Ganesh T Light</button>
                 </Link>
                 <Link to='/shop/golden-cycle'>
-                    <button>Goden Cycle</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Goden Cycle</button>
                 </Link>
                 <Link to='/shop/lion'>
-                    <button>Lion</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Lion</button>
                 </Link>
                 <Link to='/shop/monk'>
-                    <button>Monk</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Monk</button>
                 </Link>
             </div>
             {/* Part 3 */}
-            <div className='flex justify-around items-center py-5 bg-red-200'>
+            <div className='flex md:space-y-0 space-y-2  gap-10  justify-around items-center sm:py-5'>
                 <Link to='/shop/pen-green-ganesh'>
-                    <button>Pen Green Ganesh</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Pen Green Ganesh</button>
                 </Link>
                 <Link to='/shop/small-chidiya'>
-                    <button>Small Chidiya Pain Black Red</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Small Chidiya Pain Black Red</button>
                 </Link>
                 <Link to='/shop/small-dolls'>
-                    <button>Small Dolls</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Small Dolls</button>
                 </Link>
                 <Link to='/shop/swan'>
-                    <button>Swan rt of 2</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Swan rt of 2</button>
                 </Link>
                 <Link to='/shop/tree-elephant'>
-                    <button>Tree elephant</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Tree elephant</button>
                 </Link>
                 <Link to='/shop/white-barasingha'>
-                    <button>White Barasingha</button>
+                    <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>White Barasingha</button>
                 </Link>
                 {/* <Link to='>
-                    <button>Monk</button>
+                    <button className='px-4 py-1 border border-black rounded-full bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Monk</button>
                 </Link> */}
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,4 +1,6 @@
-// import React from 'react'
+/* eslint-disable no-unused-vars */
+import React,{useEffect} from 'react'
+import AOS from 'aos';
 import BrowseImage1 from '../../../Image/Landing-Page/LandingPage-Image-1.png'
 import BrowseImage2 from '../../../Image/Landing-Page/LandingPage-Image-2.png'
 import BrowseImage3 from '../../../Image/Landing-Page/LandingPage-Image-3.png'
@@ -25,6 +27,11 @@ const ImageList = [
 
 
 function BrowserRang() {
+    useEffect(() => {
+        AOS.init({
+            duration: 500, // You can set a default duration for the animations
+        });
+    }, []);
     return (
         <div className="conatiner">
 
@@ -39,7 +46,11 @@ function BrowserRang() {
             <div className=' md:flex w-full justify-around pt-12'>
                 {
                     ImageList.map((data) => (
-                        <div className="flex flex-col justify-center items-center" key={data.id}>
+                        <div className="flex flex-col justify-center items-center" key={data.id}
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        data-aos-once="true"
+                        >
                             <img src={data.img} className='w-[95%] h-[90%] bg-contain ' />
                             <p className='text-center pt-3 font-bold md:text-xl text-2xl py-5'> {data.title} </p>
 

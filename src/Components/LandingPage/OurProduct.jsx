@@ -1,4 +1,5 @@
-//? import React from 'react'
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react'
 // import img1 from '../../../Image/Landing-Page/our-Product/image-1.png'
 // import img2 from '../../../Image/Landing-Page/our-Product/image-2.png'
 // import img3 from '../../../Image/Landing-Page/our-Product/image-3.png'
@@ -7,7 +8,7 @@
 // import img6 from '../../../Image/Landing-Page/our-Product/image-6.png'
 // import img7 from '../../../Image/Landing-Page/our-Product/image-7.png'
 // import img8 from '../../../Image/Landing-Page/our-Product/image-8.png'
-
+import AOS from 'aos';
 
 import img1 from '../../../Image/Landing-Page/Showpice/Budha.jpg'
 import img2 from '../../../Image/Landing-Page/Showpice/camera.jpg'
@@ -161,53 +162,77 @@ const ImageListForOurProduct = [
 ]
 
 function OurProduct() {
+    useEffect(() => {
+        AOS.init({
+            duration: 500, // You can set a default duration for the animations
+        });
+    }, []);
     return (
         <div>
             <div className="text-center py-5">
 
-            <span className='text-xl md:text-3xl font-bold'>Our Product </span>
+                <span className='text-xl md:text-3xl font-bold'>Our Product </span>
             </div>
             <div className='conatiner mt-10'>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-                {ImageListForOurProduct.map((data) => (
-                    <div
-                        className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out"
-                        key={data.id}
-                    >
-                        <img
-                            src={data.img}
-                            alt={data.heading}
-                            className="w-full h-64 object-cover transition-transform duration-500"
-                        />
-                        <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
-                            <h2 className="text-lg font-bold">{data.heading}</h2>
-                            <p className="text-sm">{data.title}</p>
-                            <div className="flex justify-between items-center">
-                                <p className="text-sm font-bold">{data.price} RS</p>
-                                <p className="text-sm font-bold line-through">{data.orignialPrice} RS</p>
-                            </div>
-                        </div>
-                        <div className="absolute hover-Property inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-4 opacity-0 group-hover:opacity-100 transform translate-y-3/4 group-hover:translate-y-0 group-hover:mb-40 transition-all duration-500 ease-in-out">
-                            <div className="flex justify-center items-center">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
+                    {ImageListForOurProduct.map((data) => (
+                        <div
+                            className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out"
+                            key={data.id}
 
-                                <button className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded">Buy Now</button>
+                        >
+                            <img
+                                src={data.img}
+                                alt={data.heading}
+                                data-aos="fade-up"
+                                data-aos-duration="2500"
+                                data-aos-once="true"
+                                className="w-full h-64 object-cover transition-transform duration-500"
+                            
+                            />
+                            <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out"
+                            
+                            >
+                                <h2 className="text-lg font-bold"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1500"
+                                    data-aos-once="true"
+                                >{data.heading}</h2>
+                                <p className="text-sm"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1500"
+                                    data-aos-once="true"
+                                >{data.title}</p>
+                                <div className="flex justify-between items-center"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1500"
+                                    data-aos-once="true"
+                                >
+                                    <p className="text-sm font-bold">{data.price} RS</p>
+                                    <p className="text-sm font-bold line-through">{data.orignialPrice} RS</p>
+                                </div>
                             </div>
-                            <div className="flex items-center justify-around">
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoShareSocial /> Share</p>
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><VscArrowSwap />Compare</p>
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoIosHeartEmpty /> Like</p>
+                            <div className="absolute hover-Property inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-4 opacity-0 group-hover:opacity-100 transform translate-y-3/4 group-hover:translate-y-0 group-hover:mb-40 transition-all duration-500 ease-in-out">
+                                <div className="flex justify-center items-center">
+
+                                    <button className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded">Buy Now</button>
+                                </div>
+                                <div className="flex items-center justify-around">
+                                    <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoShareSocial /> Share</p>
+                                    <p className="text-sm mt-2 flex gap-2 items-center text-white"><VscArrowSwap />Compare</p>
+                                    <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoIosHeartEmpty /> Like</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-                <div className="flex justify-center items-center mt-16">
+            <div className="flex justify-center items-center mt-16">
                 <Link to='/shop'>
                     <button className='mt-4 px-4 py-2 rounded border border-[#B88E2F] h hover:bg-orange-500 hover:text-white transition duration-300' href="">Show more</button>
-                    </Link>
-                </div>
+                </Link>
+            </div>
         </div>
     )
 }

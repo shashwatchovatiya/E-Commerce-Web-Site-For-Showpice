@@ -75,8 +75,8 @@ function EmailValidation() {
               {/* Text */}
               <div className="flex flex-col w-1/2">
                 <span className="text-lg">Call Us 7/24</span>
-                <span className="lg:text-2xl text-xl break-words">
-                  +91 8866187676
+                <span className="lg:text-xl text-xl break-words">
+                  +91 9054044429
                 </span>
               </div>
             </div>
@@ -112,8 +112,8 @@ function EmailValidation() {
               <div className="flex flex-col w-1/2">
                 <span className="text-lg">Call Us 7/24</span>
                 <span className="">
-                  B2 1307, Goyal palladium tower, near Vodafone house, Makarba,
-                  Ahmedabad, 380051
+                  99, Nikol - Naroda Rd, behind POONAM BAKERY, Sakar Society,
+                  Nikol, Ahmedabad, Gujarat 382350
                 </span>
               </div>
             </div>
@@ -270,7 +270,7 @@ function EmailValidation() {
         <div className="mb-10">
           <span className="text-4xl font-bold">Our Location in map</span>
         </div>
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.468740557827!2d72.67120247392522!3d23.043270665558133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e871a7106075f%3A0x9b4bc7d6fcd30bbe!2sDivyajivan%20Elegance%2C%20B-504%2C%20Divyajivan%20Elegance%2C%20Nikol%20Gam%20Rd%2C%20opp.%20Vrundavan%20Farm%2C%20Jivanvadi%2C%20Nicol%20Gam%2C%20Nikol%2C%20Ahmedabad%2C%20Gujarat%20382350!5e0!3m2!1sen!2sin!4v1716800845865!5m2!1sen!2sin"
           width="90%"
           height="400"
@@ -279,24 +279,18 @@ function EmailValidation() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="mx-auto "
+        ></iframe> */}
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14685.628934993385!2d72.665177!3d23.0455271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87aa4f308b37%3A0xc34158b36896d956!2sFAME%20ADDA!5e0!3m2!1sen!2sin!4v1716978439173!5m2!1sen!2sin"
+          width="90%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="mx-auto "
         ></iframe>
-        <div className="my-8 flex flex-col gap-y-6 md:flex-row lg:justify-around">
-          {locations.map((location) => (
-            <div
-              key={location.title}
-              className="flex flex-col space-y-3 md:w-2/4 lg:w-1/5"
-            >
-              <MapPin className="h-5 w-5 sm:block hidden" />
-              <p className="w-full text-xl font-semibold text-gray-900">
-                {location.title}
-              </p>
-              <p className="w-full text-base text-gray-700">
-                {location.timings}
-              </p>
-              <p className="text-sm font-medium">{location.address}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </>
   );

@@ -168,7 +168,7 @@ import Shop from "./Components/Shop/Shop";
 import Cart from "./Components/Cart/Cart";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 //  import NotFoundPage2 from './Components/NotFoundPage/NotFoundPage2'
-import Tshirt from "./Components/Shop/Filter-Product/Tshirt";
+// import Tshirt from "./Components/Shop/Filter-Product/Tshirt";
 import BlackBarasingha from "./Components/Shop/Filter-Product/BlackBarasingha";
 import BlackPenthar from "./Components/Shop/Filter-Product/BlackPenthar";
 import ElephantSet1 from "./Components/Shop/Filter-Product/ElephantSet1";
@@ -189,6 +189,7 @@ import TreeElephant from "./Components/Shop/Filter-Product/TreeElephant";
 import WhiteBarsingha from "./Components/Shop/Filter-Product/WhiteBarsingha";
 import SignUp from "./Components/Account/SignUp";
 import SignIn from "./Components/Account/SignIn";
+import AllProducts from "./Components/Shop/Filter-Product/AllProducts";
 
 const router = createBrowserRouter([
   {
@@ -206,7 +207,8 @@ const router = createBrowserRouter([
       {
         path: "shop",
         children: [
-          { path: "t-shirt", element: <Tshirt /> },
+          { path: "allProduct", element: <AllProducts/> },
+          // { path: "t-shirt", element: <Tshirt /> },
           { path: "black-barasingha", element: <BlackBarasingha /> },
           { path: "black-penthar", element: <BlackPenthar /> },
           { path: "dandiya-couple", element: <DandiyaCouple /> },

@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import { IoShareSocial } from "react-icons/io5";
 import { VscArrowSwap } from "react-icons/vsc";
 import { IoIosHeartEmpty } from "react-icons/io";
+import Buy from "../../../Image/Logo/Buynow.png";
 
 const ProuctsData = [
     {
@@ -71,65 +72,56 @@ export default function LatestProduct() {
 
 
     return (
+      <div className="conatiner mt-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
+          {ProuctsData.map((data) => (
+            <div
+              className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out  overflow-hidden"
+              key={data.id}
+            >
+              <img
+                src={data.img}
+                alt={data.heading}
+                className="w-full h-64 object-fill transform transition-transform duration-500 group-hover:scale-110 "
+                data-aos="fade-up"
+                // data-aos-delay={data.aosDelay}
+              />
 
-        <div className="conatiner mt-10">
-            <div className="text-center my-10 max-w-[600px] mx-auto ">
-                <p data-aos="fade-up" className='text-primary/70 font-bold text-3xl'>Our Latest Product </p>
-                {/* <h1 data-aos="fade-up" className='text-4xl font-bold mb-1'>Products</h1> */}
-                <p data-aos="fade-up" className='text-gray-400 text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi</p>
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
+                <h2
+                  className="text-lg font-bold"
+                  data-aos="fade-up"
+                  data-aos-delay={data.aosDelay}
+                >
+                  {data.heading}
+                </h2>
+
+                <div
+                  className="flex justify-between items-center"
+                  data-aos="fade-up"
+                  //   data-aos-delay={data.aosDelay}
+                >
+                  <p className="text-sm font-bold">{data.price} RS</p>
+                  <p className="text-sm font-bold line-through text-red-600">
+                    {data.orignialPrice} RS
+                  </p>
+                </div>
+                <Link
+                  to={data.link}
+                  target="_blank"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
+                >
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
+                </Link>
+              </div>
             </div>
-
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mb-32 space-y-7">
-                {ProuctsData.map((data) => (
-                    <div
-                        className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out"
-                        key={data.id}
-                        data-aos="fade-up"
-                        data-aos-delay={data.aosDelay}
-
-                    >
-                        <img
-                            src={data.img}
-                            alt={data.heading}
-                            className="w-full h-64 object-cover md:object-contain md:bg-contain bg-cover transition-transform duration-500"
-                        />
-                        <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
-                            <h2 className="text-lg font-bold">{data.heading}</h2>
-                            <p className="text-sm">{data.title}</p>
-                            <div className="flex justify-between items-center">
-                                <p className="text-sm font-bold">{data.price} RS</p>
-                                <p className="text-sm font-bold line-through">{data.orignialPrice} RS</p>
-                            </div>
-                        </div>
-                        <div className="absolute hover-Property inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-4 opacity-0 group-hover:opacity-100 transform translate-y-3/4 group-hover:translate-y-0 group-hover:mb-40 transition-all duration-500 ease-in-out">
-                            <div className="flex justify-center items-center">
-                                <Link to={data.link} target='_blank'>
-                                    <button className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded">Buy Now</button>
-                                </Link>
-                            </div>
-                            <div className="flex justify-center items-center mt-4">
-                                <button
-                                    onClick={() => {
-                                        handleAddToCart(data);
-                                        alert("Adding cart success Full ");
-                                    }
-                                    }
-
-                                    className="bg-[#F9F1E7] text-[#B88E2F] py-2 px-6 rounded"
-                                >
-                                    Add to Cart
-                                </button>
-                            </div>
-                            <div className="flex items-center justify-around">
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoShareSocial /> Share</p>
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><VscArrowSwap /> Compare</p>
-                                <p className="text-sm mt-2 flex gap-2 items-center text-white"><IoIosHeartEmpty /> Like</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div >
-    )
+          ))}
+        </div>
+      </div>
+    );
 }

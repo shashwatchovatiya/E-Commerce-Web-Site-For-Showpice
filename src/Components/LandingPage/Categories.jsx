@@ -21,8 +21,7 @@ import dolls from "../../../Image/Icone/matryoshka-doll.png";
 import sawn from "../../../Image/Icone/love.png";
 import treeElephant from "../../../Image/Icone/eco-earth.png";
 import Swan from "../../../Image/Icone/deer.png";
-
-
+import AllProduct from "../../../Image/Icone/new-product.png";
 
 function Categories() {
   return (
@@ -30,16 +29,27 @@ function Categories() {
       <h1 className="text-start mt-20 text-4xl ">Categories</h1>
 
       <div className=" my-10 grid lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 items-center justify-center w-full grid-cols-3 space-y-2 md:gap-5 gap-3 lg:gap-10   ">
-        <Link to="/shop/t-shirt">
+        <Link to="/shop/allProduct">
+          <button className=" w-full  flex justify-center items-center flex-col  rounded-lg bg-[#] break-words">
+            <img
+              src={AllProduct}
+              alt=""
+              className="border-black hover:border-2 border p w-16  rounded-lg p-3 hover:bg-orange-300 transition-all duration-300"
+            />
+            All Product
+          </button>
+        </Link>
+
+        {/* <Link to="/shop/t-shirt">
           <button className=" w-full  flex justify-center items-center flex-col  rounded-lg bg-[#] break-words">
             <img
               src={tshirt}
-              alt="" 
+              alt=""
               className="border-black hover:border-2 border p w-16  rounded-lg p-3 hover:bg-orange-300 transition-all duration-300"
             />
             T-Shirt
           </button>
-        </Link>
+        </Link> */}
         <Link to="/shop/black-Barasingha">
           <button className=" w-full  flex justify-center items-center flex-col  rounded-lg bg-[#] break-words">
             <img

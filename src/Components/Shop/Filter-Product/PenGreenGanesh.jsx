@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom'
 import Heading from "../Heading"
 import FilterForShopping from "../FilterForShopping"
 
-import img1 from '../../../../Image/Changes/pen Green Ganesh/01.jpg'
-import img2 from '../../../../Image/Changes/pen Green Ganesh/02.jpg'
-import img3 from '../../../../Image/Changes/pen Green Ganesh/03.jpg'
-import img4 from '../../../../Image/Changes/pen Green Ganesh/04.jpg'
-import img5 from '../../../../Image/Changes/pen Green Ganesh/05.jpg'
-import img6 from '../../../../Image/Changes/pen Green Ganesh/06.jpg'
-import img7 from '../../../../Image/Changes/pen Green Ganesh/07.jpg'
+import img81 from "../../../../Image/Changes/pen Green Ganesh/01.jpg";
+import img82 from "../../../../Image/Changes/pen Green Ganesh/02.jpg";
+import img83 from "../../../../Image/Changes/pen Green Ganesh/03.jpg";
+import img84 from "../../../../Image/Changes/pen Green Ganesh/04.jpg";
+import img85 from "../../../../Image/Changes/pen Green Ganesh/05.jpg";
+import img86 from "../../../../Image/Changes/pen Green Ganesh/06.jpg";
+import img87 from "../../../../Image/Changes/pen Green Ganesh/07.jpg";
+import Buy from "../../../../Image/Logo/Buynow.png";
 
 import AOS from "aos";
 
@@ -21,71 +22,69 @@ import Pagination from '../Pagination'
 
 const ShopingList12 = [
   {
-    id: 1,
-    img: img1,
-    heading: "Budhha Showpice",
+    id: 81,
+    img: img81,
+    heading: "Pan Ganesh-1 ",
     title: "Stylish Budha ShowPice",
-    price: 2500.00,
+    price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`
+    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
-    id: 2,
-    img: img2,
-    heading: "Old Cemara Showpice",
+    id: 82,
+    img: img82,
+    heading: "Pan Ganesh-2",
     title: "Stylish Old Camera",
-    price: 2500.00,
+    price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`
+    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
-    id: 3,
-    img: img3,
-    heading: "Coper Lady Face",
+    id: 83,
+    img: img83,
+    heading: "Pan Ganesh-3",
     title: "Stylish Coper Lady Face   ",
-    price: 70000.00,
-    orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`
+    price: 2500.0,
+    orignialPrice: 3500,
+    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
-    id: 4,
-    img: img4,
-    heading: "Dear Showpice",
+    id: 84,
+    img: img84,
+    heading: "Pan Ganesh-4",
     title: "for Hall stylish Decoration",
-    price: 5000.00,
+    price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`
+    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
-    id: 5,
-    img: img5,
-    heading: "Dolphine",
+    id: 85,
+    img: img85,
+    heading: "Pan Ganesh-5",
     title: "Creating Mirror Dolphine",
-    price: 2500.00,
+    price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`
+    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
-    id: 6,
-    img: img6,
-    heading: "Stylish Kirshna",
+    id: 86,
+    img: img86,
+    heading: "Pan Ganesh-6",
     title: "God Of the World Showpice ",
-    price: 2500.00,
+    price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`
+    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
-    id: 7,
-    img: img7,
-    heading: "Old Style Elephant",
+    id: 87,
+    img: img87,
+    heading: "Pan Ganesh-7",
     title: "Royal style Elephnat ",
-    price: 70000.00,
-    orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`
+    price: 2500.0,
+    orignialPrice: 3500,
+    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
-  
-
-]
+];
 
 function PenGreenGanesh() {
   const [cart, setCart] = useState([]);
@@ -122,7 +121,10 @@ useEffect(() => {
                 data-aos="fade-up"
                 // data-aos-delay={data.aosDelay}
               />
-              <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
+
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
                 <h2
                   className="text-lg font-bold"
                   data-aos="fade-up"
@@ -137,18 +139,19 @@ useEffect(() => {
                   //   data-aos-delay={data.aosDelay}
                 >
                   <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">
+                  <p className="text-sm font-bold line-through text-red-600">
                     {data.orignialPrice} RS
                   </p>
                 </div>
                 <Link
                   to={data.link}
                   target="_blank"
-                  className="w-full flex justify-center"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
                 >
-                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
-                    Buy on Filpkart
-                  </button>
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
                 </Link>
               </div>
             </div>

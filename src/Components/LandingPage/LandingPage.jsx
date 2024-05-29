@@ -1,12 +1,86 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react'
-import bgImage from '../../../Image/Landing-Page/background-1.png'
+import React, { useEffect } from "react";
+import bgImage from "../../../Image/Landing-Page/background-1.png";
 // import BrowserRang from './ProductList'
-import FuniroFurniture from './FuniroFurniture'
-import OurProduct from './OurProduct'
-import Testimorinal from './Testimorinal'
-import AOS from 'aos';
-import Categories from './Categories'
+import FuniroFurniture from "./FuniroFurniture";
+import OurProduct from "./OurProduct";
+import Testimorinal from "./Testimorinal";
+import AOS from "aos";
+import Categories from "./Categories";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "aos/dist/aos.css";
+import Slider from "react-slick";
+
+import Image1 from "../../../Image/HomePage-Slider/11.jpeg";
+import Image2 from "../../../Image/HomePage-Slider/12.jpeg";
+import Image3 from "../../../Image/HomePage-Slider/13.jpeg";
+import Image4 from "../../../Image/HomePage-Slider/14.jpeg";
+
+import Image10 from "../../../Image/HomePage-Slider/1.jpg";
+import Image11 from "../../../Image/HomePage-Slider/2.webp";
+import Image12 from "../../../Image/HomePage-Slider/3.jpg";
+// import Image14 from "../../../Image/HomePage-Slider/4.jpg";
+
+import { Link } from "react-router-dom";
+const ImageList = [
+  {
+    id: 1,
+    img: Image1,
+    title: "Know More About Us? ",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 2,
+    img: Image2,
+    title: "Know More About Product?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 3,
+    img: Image3,
+    title: "Know More About our team?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 4,
+    img: Image4,
+    title: "Know More About our team?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 5,
+    img: Image10,
+    title: "Know More About our team?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 4,
+    img: Image11,
+    title: "Know More About our team?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  {
+    id: 4,
+    img: Image12,
+    title: "Know More About our team?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  },
+  // {
+  //   id: 4,
+  //   img: Image14,
+  //   title: "Know More About our team?",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+  // },
+];
 
 function LandingPage() {
   useEffect(() => {
@@ -14,25 +88,74 @@ function LandingPage() {
       duration: 500, // You can set a default duration for the animations
     });
   }, []);
+
+  var setting = {
+    dots: true,
+    arrows: false,
+    infinite: true, // Corrected typo here
+    speed: 800,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "ease-in-out",
+    pauseOnHover: false,
+    pauseOnFocus: true,
+    responsive: [
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
       {/* First image section */}
-      <main className="w-full lg:h-[95vh] h-screen bg-repeat-x bg-center m-0 lg:bg-contain  bg-cover flex justify-end shadow-zinc-500 shadow-md " style={{ backgroundImage: `url(${bgImage})`, }}
-        data-aos="fade-up"
-        data-aos-duration="500"
-        // data-aos-delay="100"
-        >
-        <div className="md:h-80 md:w-96 w-1/2 h-1/2 bg-[#FFF3E3]  lg:mr-36 my-auto px-6 py-8 space-y-5  overflow-auto" >
-          <p className='text-xs font-bold pb-5'>  New Arravial </p>
-          <span className='lg:text-3xl md:text-2xl text-xl text-[#B88E2F] font-extrabold '>Discover Our</span><br />
-          <span className='lg:text-3xl md:text-2xl text-xl text-[#B88E2F] font-extrabold'>New Collection</span>
-          <p className='md:text-sm text-xs'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cum asperiores aperiam blanditiis perferendis nostrum itaque officiis dolorum</p>
-        </div>
-      </main>
 
+      <Slider {...setting}>
+        {ImageList.map((data) => (
+          <div className="" key={data.id}>
+            {/* <div className="grid grid-cols-1 "> */}
+            {/* Text Content Section  */}
+
+            {/* Image Content Section  */}
+            <div className="">
+              <div
+                className="relative "
+                data-aos="zoom-in"
+                data-aos-once="true"
+              >
+                <img
+                  src={data.img}
+                  alt=""
+                  className="md:w-full md:h-screen h-[70vh]    mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
 
       {/* Browser Section */}
-    <Categories />
+      <Categories />
 
       {/* <BrowserRang /> */}
 
@@ -43,9 +166,9 @@ function LandingPage() {
       <Testimorinal />
 
       {/* FuniroFurniture */}
-      <FuniroFurniture />
+      {/* <FuniroFurniture /> */}
     </>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;

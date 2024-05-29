@@ -1,66 +1,133 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
+/* eslint-disable no-unused-vars */
 
+import React from "react";
+import img from "../../../Image/footer.jpg";
+import logo from "../../../Image/Landing-Page/House_Logos-05.png";
 
-function Footer() {
+import { Link } from "react-router-dom";
+import { CiLocationOn } from "react-icons/ci";
+import { CiMobile3 } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+
+const FooterImg = {
+  backgroundImage: `url(${img})`,
+  backgroundPosition: "bottom",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  height: "100%",
+  width: "100%",
+};
+
+export default function Footer() {
   return (
-
-    <div className="py-8 conatiner">
-      <hr />
-      <footer className="grid md:grid-cols-3 py-10">
+    <div
+      style={FooterImg}
+      //   // data-aos="zoom-in"
+      className="w-full bg-gray-100 pb-36 dark:bg-gray-800 text-white mt-24"
+    >
+      <footer className=" conatiner grid md:grid-cols-4 py-10">
         {/* Logo */}
         <div className="pt-7 md:text-start text-center">
           <h1 className="font-bold text-2xl pb-12">Furniro</h1>
-          <p>400 University Drive Suite 200 Coral</p> <p> Gables, </p> <p>FL 33134 USA</p>
+          <p>400 University Drive Suite 200 Coral</p> <p> Gables, </p>
+          <p>FL 33134 USA</p>
         </div>
 
-        <div className="flex justify-evenly md:pt-0 pt-10">
-
-          {/* Important  link */}
-          <div className="pt-5  flex flex-col justify-center items-center">
-            <h1 className=' text-[#9F9F9F] pb-12'> Links</h1>
-            <ul className='flex- flex-col gap-5 space-y-5 '>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Home</li>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Shop</li>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>About</li>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Contact</li>
-            </ul>
-          </div>
-
-
-          {/* Help */}
-          <div className=" flex flex-col justify-center items-center mb-6">
-            <h1 className=' pb-12 text-[#9F9F9F]'> Help</h1>
-            <ul className='flex- flex-col gap-5 space-y-5  '>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Payment Options</li>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Returns</li>
-              <li className='hover:translate-x-1 hover:text-primary duration-150'>Privacy Policies</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* icons */}
+        {/* Get in touch */}
         <div className="md:pt-5 mx-auto md:mx-0 pt-10 flex flex-col items-start">
-          <span className="text-[#9F9F9F] "> Newsletter</span>
-          <form action="" className="md:flex gap-5  mt-9">
-            <span>
-              <input type="text" className="border-b-black outline-none" placeholder="Enter your email address" />
-              <hr className="border-black" />
-            </span>
-            <span className="">
-              <button className="md:mt-0  mt-5"> SUBSCRIBE</button>
-              <hr className="border-black" />
-            </span>
+          <div className="">
+            <h1 className=" text-white font-bold pb-12"> Links</h1>
+          </div>
 
-          </form>
+          <div className="flex flex-col space-y-5">
+            <div className="flex gap-2 ">
+              <CiLocationOn className="w-10" />
+              <span>
+                99, Nikol - Naroda Rd, behind POONAM BAKERY, Sakar Society,
+                Nikol, Ahmedabad, Gujarat 382350
+              </span>
+            </div>
+
+            <div className="flex gap-2">
+              <CiMobile3 />
+              <span>+91 9054044429</span>
+            </div>
+
+            <div className="flex gap-2">
+              <CiMail />
+              <span>fameadda18@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Important  link */}
+        <div className="pt-5  flex flex-col justify-center items-center">
+          <h1 className=" text-white font-bold pb-12"> Links</h1>
+
+          <ul className="flex- flex-col gap-5 space-y-5">
+            <Link className=" flex space-y-5" to="/">
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Home
+              </li>
+            </Link>
+            <Link className=" flex space-y-5" to="/about">
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                About
+              </li>
+            </Link>
+            <Link className=" flex space-y-5" to="/contact">
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Contact
+              </li>
+            </Link>
+            <Link className=" flex space-y-5" to="/shop">
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Shop
+              </li>
+            </Link>
+          </ul>
+        </div>
+
+        {/* Help */}
+        <div className="pt-5  flex flex-col justify-center items-center">
+          <h1 className=" text-white font-bold pb-12"> Follow</h1>
+
+          <ul className="flex- flex-col gap-5 space-y-5">
+            <Link
+              to="https://www.instagram.com/fame_adda_18?igsh=Z215eHh1azVpcmt0"
+              target="_blank"
+              className=" flex space-y-5"
+            >
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Instagram
+              </li>
+            </Link>
+            <Link
+              className=" flex space-y-5"
+              to="https://www.facebook.com/profile.php?id=100094475768450&mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Facebook
+              </li>
+            </Link>
+            <Link className=" flex space-y-5" to="/contact">
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Twitter
+              </li>
+            </Link>
+            <Link
+              className=" flex space-y-5"
+              to="https://wa.me/919054044429?text=Hello How can ihelp u ?"
+              target="_blank"
+            >
+              <li className="hover:translate-x-1 hover:text-primary duration-150">
+                Whatsapp
+              </li>
+            </Link>
+          </ul>
         </div>
       </footer>
-      {/* hr  */}
-
-      <hr />
     </div>
-
-  )
+  );
 }
-
-export default Footer

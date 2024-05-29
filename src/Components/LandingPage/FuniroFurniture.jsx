@@ -1,103 +1,8 @@
 /* eslint-disable no-unused-vars */
-// import React from 'react'
 
-// import img1 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-36.png'
-// import img2 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-37.png'
-// import img3 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-38.png'
-// import img4 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-39.png'
-// import img5 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-40.png'
-// import img6 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-41.png'
-// import img7 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-43.png'
-// import img8 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-44.png'
-// import img9 from '../../../Image/Landing-Page/FutherFurniture/Rectangle-45.png'
-
-// function FuniroFurniture() {
-//     return (
-
-//         <>
-//         <div className='md:mt-20 mt-10 text-center'>
-//            <span> Shar your setup with</span>
-//            <h1 className='text-xl font-bold'>#FuniroFurniture</h1>
-//         </div>
-//             <div className=" md:flex justify-center gap-5 w-full md:h-screen   bg-cover">
-
-//                 {/* 1'st */}
-//                 <div className=" md:h-[300px] h-auto md:w-auto w-full">
-//                     <div className="md:flex gap-5 w-full h-3/4">
-//                         <span className='img1 flex justify-center '>
-//                             <img src={img1} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer md:w-full hidden md:block h-[225px] md:h-[100%] bg-cover' />
-//                         </span>
-//                         <span className='img3  flex items-end'>
-//                             <img src={img3} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer md:w-[280px] w-full h-[170px] ' />
-//                         </span>
-
-//                     </div>
-//                     <div className="md:flex gap-5 mt-5 w-full h-3/4">
-//                         <span className='img2 '>
-//                             <img src={img2} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full h-[200px] bg-contain' />
-//                         </span>
-//                         <span className='img4'>
-//                             <img src={img4} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full md:h-[150px] bg-contain' />
-//                         </span>
-//                     </div>
-//                 </div>
-//                 {/* 2 */}
-//                 <div className="flex justify-center items-center  ">
-//                     <span className='img5  flex justify-center items-center '>
-//                         <img src={img5} alt="funiroFunriture" onClick={()=>{
-//                             alert("This function is not ready for bakend Side")
-//                         }} className='cursor-pointer w-full h-[200px] bg-contain' />
-//                     </span>
-//                 </div>
-
-//                 {/* 3 Content */}
-//                 <div className="">
-//                 <div className=" gap-7 w-auto md:h-[300px] h-auto md:w-full">
-//                     <div className="md:flex gap-5 w-full h-3/4">
-//                         <span className='img1 flex items-end'>
-//                             <img src={img7} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full h-[180px]' />
-//                         </span>
-//                         <span className='img3'>
-//                             <img src={img9} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full h-[220px] ' />
-//                         </span>
-
-//                     </div>
-//                     <div className="md:flex gap-5 mt-5 w-full h-3/4">
-//                         <span className='img6 '>
-//                             <img src={img6} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full h-[200px]' />
-//                         </span>
-//                         <span className='img7'>
-//                             <img src={img8} alt="funiroFunriture" onClick={()=>{
-//                                 alert("This function is not ready for bakend Side")
-//                             }} className='cursor-pointer w-full md:w-[200px] h-[150px]' />
-//                         </span>
-//                     </div>
-//                 </div>
-//                 </div>
-//             </div>
-
-//         </>
-//     )
-// }
-
-// export default FuniroFurniture
 
 import React from "react";
-
+import Buy from "../../../Image/Logo/Buynow.png";
 import img1 from "../../../Image/T-Shirt/Black.jpg";
 import img2 from "../../../Image/T-Shirt/Kathai.jpg";
 import img3 from "../../../Image/T-Shirt/NaviBlue.jpg";
@@ -207,7 +112,10 @@ function FuniroFurniture() {
                 data-aos="fade-up"
                 // data-aos-delay={data.aosDelay}
               />
-              <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
+
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
                 <h2
                   className="text-lg font-bold"
                   data-aos="fade-up"
@@ -222,18 +130,19 @@ function FuniroFurniture() {
                   //   data-aos-delay={data.aosDelay}
                 >
                   <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">
+                  <p className="text-sm font-bold line-through text-red-600">
                     {data.orignialPrice} RS
                   </p>
                 </div>
                 <Link
                   to={data.link}
                   target="_blank"
-                  className="w-full flex justify-center"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
                 >
-                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
-                    Buy on Filpkart
-                  </button>
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
                 </Link>
               </div>
             </div>

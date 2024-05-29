@@ -7,9 +7,9 @@ function RelatedTab() {
         <div className='flex overflow-x-auto  gap-10 text-nowrap'>
 
             <div className='flex md:space-y-0 space-y-2 gap-10  justify-around items-center py-5'>
-                <Link to='/shop/t-shirt'>
+                {/* <Link to='/shop/t-shirt'>
                     <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>T-Shirt </button>
-                </Link>
+                </Link> */}
                 <Link to='/shop/black-Barasingha'>
                     <button className='px-4 py-1 border border-black rounded-lg bg-[#FAF3EA] hover:bg-orange-300 transition-all duration-300 hover:text-white'>Black Barasingha</button>
                 </Link>

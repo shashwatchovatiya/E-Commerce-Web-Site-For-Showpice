@@ -18,78 +18,12 @@ import img5 from "../../../Image/Landing-Page/Showpice/DollFine.jpg";
 import img6 from "../../../Image/Landing-Page/Showpice/Kirshan.jpg";
 import img7 from "../../../Image/Landing-Page/Showpice/RoyalElephant.jpg";
 import img8 from "../../../Image/Landing-Page/Showpice/OldMusicPlayer.jpg";
-
+import Buy from "../../../Image/Logo/Buynow.png";
 import { IoShareSocial } from "react-icons/io5";
 import { VscArrowSwap } from "react-icons/vsc";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-// const ImageListForOurProduct = [
-//     {
-//         id: 1,
-//         img: img1,
-//         heading: "Syltherine",
-//         title: "Stylish cafe chair",
-//         price: 2500.00,
-//         orignialPrice: 3500
-//     },
-//     {
-//         id: 2,
-//         img: img2,
-//         heading: "Leviosa",
-//         title: "Stylish cafe chair",
-//         price: 2500.00,
-//         orignialPrice: 3500
-//     },
-//     {
-//         id: 3,
-//         img: img3,
-//         heading: "Lolito",
-//         title: "Luxury big sofa",
-//         price: 70000.00,
-//         orignialPrice: 13500
-//     },
-//     {
-//         id: 4,
-//         img: img4,
-//         heading: "Respria",
-//         title: "Outdoor bar table and stool",
-//         price: 5000.00,
-//         orignialPrice: 3500
-//     },
-//     {
-//         id: 5,
-//         img: img5,
-//         heading: "Grifo",
-//         title: "Night lampe For bad Room & Living ",
-//         price: 2500.00,
-//         orignialPrice: 3500
-//     },
-//     {
-//         id: 6,
-//         img: img6,
-//         heading: "Small Sofa",
-//         title: "Divine Arts Wood 4 Seater Sofa Set ",
-//         price: 25000.00,
-//         orignialPrice: 35000
-//     },
-//     {
-//         id: 7,
-//         img: img7,
-//         heading: "Big Soffa",
-//         title: "Big Soffa for six seat",
-//         price: 35000.00,
-//         orignialPrice: 40000
-//     },
-//     {
-//         id: 8,
-//         img: img8,
-//         heading: "Two seat sofa",
-//         title: "Stylish sofa chair",
-//         price: 5000.00,
-//         orignialPrice: 6300
-//     }
-// ]
 
 const ImageListForOurProduct = [
   {
@@ -183,7 +117,10 @@ function OurProduct() {
                 data-aos="fade-up"
                 // data-aos-delay={data.aosDelay}
               />
-              <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
+
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
                 <h2
                   className="text-lg font-bold"
                   data-aos="fade-up"
@@ -198,18 +135,19 @@ function OurProduct() {
                   //   data-aos-delay={data.aosDelay}
                 >
                   <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">
+                  <p className="text-sm font-bold line-through text-red-600">
                     {data.orignialPrice} RS
                   </p>
                 </div>
                 <Link
                   to={data.link}
                   target="_blank"
-                  className="w-full flex justify-center"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
                 >
-                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
-                    Buy on Filpkart
-                  </button>
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
                 </Link>
               </div>
             </div>

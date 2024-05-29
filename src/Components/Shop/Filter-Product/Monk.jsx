@@ -1,12 +1,4 @@
-// import React from 'react'
 
-// function Monk() {
-//   return (
-//     <div>Monk</div>
-//   )
-// }
-
-// export default Monk\
 
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
@@ -16,26 +8,28 @@ import Heading from "../Heading";
 import FilterForShopping from "../FilterForShopping";
 import AOS from "aos";
 
-import img1 from "../../../../Image/Changes/Monk/51LVxT+DROL._AC_SL1081_.jpg";
-import img2 from "../../../../Image/Changes/Monk/610DHm3BLdL._AC_SL1081_.jpg";
+import img79 from "../../../../Image/Changes/Monk/51LVxT+DROL._AC_SL1081_.jpg";
+import img80 from "../../../../Image/Changes/Monk/610DHm3BLdL._AC_SL1081_.jpg";
+import Buy from "../../../../Image/Logo/Buynow.png";
 
 
 import Pagination from "../Pagination";
 
 const ShopingList12 = [
   {
-    id: 1,
-    img: img1,
-    heading: "Budhha Showpice",
+    id: 79,
+    img: img79,
+    heading: "Monk Showpice - 1 ",
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
     link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
+
   {
-    id: 2,
-    img: img2,
-    heading: "Old Cemara Showpice",
+    id: 80,
+    img: img80,
+    heading: "Monk Showpice - 2",
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
@@ -78,7 +72,10 @@ function Monk() {
                 data-aos="fade-up"
                 // data-aos-delay={data.aosDelay}
               />
-              <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
+
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
                 <h2
                   className="text-lg font-bold"
                   data-aos="fade-up"
@@ -93,18 +90,19 @@ function Monk() {
                   //   data-aos-delay={data.aosDelay}
                 >
                   <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">
+                  <p className="text-sm font-bold line-through text-red-600">
                     {data.orignialPrice} RS
                   </p>
                 </div>
                 <Link
                   to={data.link}
                   target="_blank"
-                  className="w-full flex justify-center"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
                 >
-                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
-                    Buy on Filpkart
-                  </button>
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
                 </Link>
               </div>
             </div>

@@ -7,30 +7,38 @@ import Heading from "./Heading"
 import PaginationRounded from "./Pagination2"
 // import RelatedTab from "./RelatedTab"
 import ShopingList from "./ShopingList"
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import ScrollToTop from "../ScrollToTop"
 
 function Shop() {
+  const handleTop = () => {
+    window.scrollTo({ top: 0, Left: 0, behavior: "smooth" });
+  };
   return (
-   <>
-    {/* Heading Section */}
-    <Heading />
+    <>
+      <ScrollToTop />
+      {/* Heading Section */}
+      <Heading />
 
-    {/* Filter path */}
-    <FilterForShopping />
+      {/* Filter path */}
+      <FilterForShopping />
 
-    {/* <RelatedTab /> */}
+      {/* <RelatedTab /> */}
 
-    {/* Shoping List  */}
-    <ShopingList />
+      {/* Shoping List  */}
+      <ShopingList />
 
+      {/* Pagination */}
+      {/* <Pagination  /> */}
+      <PaginationRounded />
+      {/* AditionInformation */}
+      <AditionalInformation />
 
-
-    {/* Pagination */}
-    {/* <Pagination  /> */}
-    <PaginationRounded />
-    {/* AditionInformation */}
-    <AditionalInformation />
-   </>
-  )
+      <button className="bottom-12 right-7 fixed  z-50 " onClick={handleTop}>
+        <FaArrowAltCircleUp className="text-orange-300 text-5xl animate-bounce" />
+      </button>
+    </>
+  );
 }
 
 export default Shop

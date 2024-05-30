@@ -26,7 +26,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 89,
@@ -35,7 +35,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 90,
@@ -44,7 +44,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 91,
@@ -53,7 +53,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 92,
@@ -62,7 +62,7 @@ const ShopingList12 = [
     title: "Sparrow -5",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 93,
@@ -71,7 +71,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
 
   //

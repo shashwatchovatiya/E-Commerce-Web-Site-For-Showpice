@@ -23,7 +23,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Figurines-Showpiece-Dashboard/dp/B0D3BRXNPL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aYqgkpOYgvEDR8ZmnUL4XpQwFcIHpXUBsrbvF49ywjxvjGhMDqktLT5WkbC8T0QrUK_tTTlEdO0soZ6U3f-ldoxCdcKSmhyBSw9rwxPcDsRcmU7rrRV5TBOIpv9p-FoAGMpK3SQFMt8I_DMCY8yZ4pGC8wgnBdVjvgUds4ZHhIOYMKcwQ28mSPV-r4nO-h94VYSB5AjxaQRnt6b5Wm_p_0ZNm-bX3whL1XURr2rbxG0.G4SF3evPvrtf90HcX0Fg3WDaVkz5kGImzcT4S0FZaO4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717060801&s=merchant-items&sr=1-1`,
   },
 
   {
@@ -33,7 +33,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Figurines-Showpiece-Dashboard/dp/B0D3BRXNPL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aYqgkpOYgvEDR8ZmnUL4XpQwFcIHpXUBsrbvF49ywjxvjGhMDqktLT5WkbC8T0QrUK_tTTlEdO0soZ6U3f-ldoxCdcKSmhyBSw9rwxPcDsRcmU7rrRV5TBOIpv9p-FoAGMpK3SQFMt8I_DMCY8yZ4pGC8wgnBdVjvgUds4ZHhIOYMKcwQ28mSPV-r4nO-h94VYSB5AjxaQRnt6b5Wm_p_0ZNm-bX3whL1XURr2rbxG0.G4SF3evPvrtf90HcX0Fg3WDaVkz5kGImzcT4S0FZaO4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717060801&s=merchant-items&sr=1-1`,
   },
 ];
 

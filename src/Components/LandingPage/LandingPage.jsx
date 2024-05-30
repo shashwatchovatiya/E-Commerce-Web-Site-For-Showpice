@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import Slider from "react-slick";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 import Image1 from "../../../Image/HomePage-Slider/11.jpeg";
 import Image2 from "../../../Image/HomePage-Slider/12.jpeg";
@@ -23,6 +24,7 @@ import Image12 from "../../../Image/HomePage-Slider/3.jpg";
 // import Image14 from "../../../Image/HomePage-Slider/4.jpg";
 
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 const ImageList = [
   {
     id: 1,
@@ -89,6 +91,10 @@ function LandingPage() {
     });
   }, []);
 
+  const handleTop = () => {
+    window.scrollTo({top:0, Left:0,behavior:"smooth"});
+  };
+
   var setting = {
     dots: true,
     arrows: false,
@@ -128,6 +134,7 @@ function LandingPage() {
   };
   return (
     <>
+      <ScrollToTop />
       {/* First image section */}
 
       <Slider {...setting}>
@@ -154,6 +161,9 @@ function LandingPage() {
         ))}
       </Slider>
 
+      <button className="bottom-12 right-7 fixed  z-50 " onClick={handleTop}>
+        <FaArrowAltCircleUp className="text-orange-300 text-5xl animate-bounce" />
+      </button>
       {/* Browser Section */}
       <Categories />
 

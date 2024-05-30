@@ -1,5 +1,22 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
+import img1001 from "../../../../Image/Landing-Page/Showpice/Budha.jpg";
+import img1002 from "../../../../Image/Landing-Page/Showpice/camera.jpg";
+import img1003 from "../../../../Image/Landing-Page/Showpice/CoperLadyFace.jpg";
+import img1004 from "../../../../Image/Landing-Page/Showpice/Dear.jpg";
+import img1005 from "../../../../Image/Landing-Page/Showpice/DollFine.jpg";
+import img1006 from "../../../../Image/Landing-Page/Showpice/Kirshan.jpg";
+import img1007 from "../../../../Image/Landing-Page/Showpice/RoyalElephant.jpg";
+import img1008 from "../../../../Image/Landing-Page/Showpice/OldMusicPlayer.jpg";
+import img1009 from "../../../../Image/Landing-Page/Showpice/Monk.jpg";
+import img1010 from "../../../../Image/Landing-Page/Showpice/PinkParakeet.jpg";
+import img1011 from "../../../../Image/Landing-Page/Showpice/LadyWithBasket2.jpg";
+import img1012 from "../../../../Image/Landing-Page/Showpice/TreeForDecore.jpg";
+import img1013 from "../../../../Image/Landing-Page/Showpice/TrendigRajasthani3Statu.jpg";
+import img1014 from "../../../../Image/Landing-Page/Showpice/WallShowpice.jpg";
+import img1015 from "../../../../Image/Landing-Page/Showpice/RajastaniStatue.jpg";
+import img1016 from "../../../../Image/Landing-Page/Showpice/CarftVatika.jpg";
+import Buy from "../../../../Image/Logo/Buynow.png";
 
 import img1 from "../../../../Image/Changes/Black Barasingha/01.jpg";
 import img2 from "../../../../Image/Changes/Black Barasingha/02.jpg";
@@ -157,13 +174,158 @@ import AOS from "aos";
 
 const ShopingList12 = [
   {
+    id: 1001,
+    img: img1001,
+    heading: "Budhha Showpice",
+    title: "Stylish Budha ShowPice",
+    price: 2500.0,
+    originalPrice: 3500,
+    // link: "https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42",
+  },
+  {
+    id: 1002,
+    img: img1002,
+    heading: "Old Camera Showpice",
+    title: "Stylish Old Camera",
+    price: 2500.0,
+    originalPrice: 3500,
+    // link: "https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb",
+  },
+  // Add more items as needed
+  {
+    id: 1003,
+    img: img1003,
+    heading: "Coper Lady Face",
+    title: "Stylish Coper Lady Face   ",
+    price: 70000.0,
+    orignialPrice: 13500,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+  },
+  {
+    id: 1004,
+    img: img1004,
+    heading: "Dear Showpice",
+    title: "for Hall stylish Decoration",
+    price: 5000.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+  },
+  {
+    id: 10055,
+    img: img1005,
+    heading: "Dolphine",
+    title: "Creating Mirror Dolphine",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+  },
+  {
+    id: 1006,
+    img: img1006,
+    heading: "Stylish Kirshna",
+    title: "God Of the World Showpice ",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+  },
+  {
+    id: 1007,
+    img: img1007,
+    heading: "Old Style Elephant",
+    title: "Royal style Elephnat ",
+    price: 70000.0,
+    orignialPrice: 13500,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+  },
+  {
+    id: 1008,
+    img: img1008,
+    heading: "Old Musice Player",
+    title: "1980's Musice Player ",
+    price: 5000.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+  },
+  {
+    id: 1009,
+    img: img1009,
+    heading: "Littel Monk ",
+    title: "Stylish monk for showpice ",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.amazon.in/FAME-ADDA-Figurines-Showpiece-Dashboard/dp/B0D3BRXNPL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aYqgkpOYgvEDR8ZmnUL4XpQwFcIHpXUBsrbvF49ywjxvjGhMDqktLT5WkbC8T0QrUK_tTTlEdO0soZ6U3f-ldoxCdcKSmhyBSw9rwxPcDsRcmU7rrRV5TBOIpv9p-FoAGMpK3SQFMt8I_DMCY8yZ4pGC8wgnBdVjvgUds4ZHhIOYMKcwQ28mSPV-r4nO-h94VYSB5AjxaQRnt6b5Wm_p_0ZNm-bX3whL1XURr2rbxG0.G4SF3evPvrtf90HcX0Fg3WDaVkz5kGImzcT4S0FZaO4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717060801&s=merchant-items&sr=1-1`,
+  },
+  {
+    id: 1010,
+    img: img1010,
+    heading: "Pink Bird ",
+    title: "Pink bird for hall showpice ",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+  },
+  {
+    id: 1011,
+    img: img1011,
+    heading: "Lady with basket",
+    title: "BeautiFull Lady with Basket",
+    price: 70000.0,
+    orignialPrice: 13500,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+  },
+  {
+    id: 1012,
+    img: img1012,
+    heading: "Wall Tree",
+    title: "Wall for Tree decoration ",
+    price: 5000.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+  },
+  {
+    id: 1013,
+    img: img1013,
+    heading: "Trendig Rajasthani",
+    title: "3 Rajasthani musician ",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+  },
+  {
+    id: 1014,
+    img: img1014,
+    heading: "Wall Decoration",
+    title: "Stylish and unique Wall Wallpaper ",
+    price: 2500.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+  },
+  {
+    id: 1015,
+    img: img1015,
+    heading: "One Rajasthani Couple ",
+    title: "New Rajasthani Couple Statue",
+    price: 70000.0,
+    orignialPrice: 13500,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+  },
+  {
+    id: 1016,
+    img: img1016,
+    heading: "Respria",
+    title: "Outdoor bar table ",
+    price: 5000.0,
+    orignialPrice: 3500,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+  },
+  {
     id: 1,
     img: img1,
     heading: "Black Barasingha -1 ",
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 2,
@@ -172,7 +334,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 3,
@@ -181,7 +343,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 4,
@@ -190,7 +352,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 5,
@@ -199,7 +361,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 6,
@@ -208,7 +370,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 7,
@@ -217,7 +379,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 8,
@@ -226,7 +388,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -237,7 +399,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 10,
@@ -246,7 +408,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 11,
@@ -255,7 +417,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 12,
@@ -264,7 +426,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 13,
@@ -273,7 +435,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 14,
@@ -282,7 +444,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 15,
@@ -291,7 +453,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 16,
@@ -300,7 +462,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 
   {
@@ -310,7 +472,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 18,
@@ -319,7 +481,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -331,7 +493,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 20,
@@ -340,7 +502,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 21,
@@ -349,7 +511,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 22,
@@ -358,7 +520,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 23,
@@ -367,7 +529,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 24,
@@ -376,7 +538,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
   {
     id: 25,
@@ -385,7 +547,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CZ7D7N1N/ref=sr_1_27?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063086&s=merchant-items&sr=1-27`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -397,7 +559,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 27,
@@ -406,7 +568,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -418,7 +580,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 29,
@@ -427,7 +589,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 30,
@@ -436,7 +598,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 31,
@@ -445,7 +607,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 32,
@@ -454,7 +616,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 33,
@@ -463,7 +625,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
   {
     id: 34,
@@ -472,7 +634,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Elephant-Ceramic-Figures/dp/B0D2B8CCGH/ref=sr_1_19?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-19`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -484,7 +646,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 36,
@@ -493,7 +655,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 37,
@@ -502,7 +664,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 38,
@@ -511,7 +673,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 39,
@@ -520,7 +682,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 40,
@@ -529,7 +691,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
   {
     id: 41,
@@ -538,7 +700,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7G2T1M/ref=sr_1_26?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717061561&s=merchant-items&sr=1-26`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -550,7 +712,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 43,
@@ -559,7 +721,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 44,
@@ -568,7 +730,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 45,
@@ -577,7 +739,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 46,
@@ -586,7 +748,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 47,
@@ -595,7 +757,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 48,
@@ -604,7 +766,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -616,7 +778,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
   {
     id: 50,
@@ -625,7 +787,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
   {
     id: 51,
@@ -634,7 +796,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
   {
     id: 52,
@@ -643,7 +805,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
   {
     id: 53,
@@ -652,7 +814,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
   {
     id: 54,
@@ -661,7 +823,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
 
   {
@@ -671,7 +833,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Polyresin-Handcrafted-Thoughtful/dp/B0CYSW3T9J/ref=sr_1_32?dib=eyJ2IjoiMSJ9.ZFAOHzvlYPMYfKr8EdE2vJBGlckcM1_275LGIkET03YN2qKFZMgEz4KJ2qRR6o0-WE7d2hDk7eozcmJbsVT6_DftQNpqMGO9Cint5dMFdlbzUOHN7kZWtFggZjKQS9-wNyHqlJP5f5tIC2MpR81kBO7qMEAa_pFvEE9vTmrtE2Wv_vv0C4J_c9SzRpY4ioSxZOuNOZHBjmc_Jmf6-E-yYibD1E3P6KHxr55EXSpKlRQ.AdK7jU8CEHN-pqJ7XA32zXYxQ3ks6Q5aXWHWVFUUSq4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717063627&s=merchant-items&sr=1-32&th=1`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -683,7 +845,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 57,
@@ -692,7 +854,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 58,
@@ -701,7 +863,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 59,
@@ -710,7 +872,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 60,
@@ -719,7 +881,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 61,
@@ -728,7 +890,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
   {
     id: 62,
@@ -737,7 +899,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Handcrafted-Showpiece-Decorations/dp/B0CZJ28FP7/ref=sr_1_20?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-20`,
   },
 
   //? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nihil accusamus sit voluptatem corrupti tempore enim expedita fugiat deleniti totam atque, saepe ea explicabo officia blanditiis asperiores placeat, delectus sapiente.
@@ -749,7 +911,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 64,
@@ -758,7 +920,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 65,
@@ -767,7 +929,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 66,
@@ -776,7 +938,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 67,
@@ -785,7 +947,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 68,
@@ -794,7 +956,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
   {
     id: 69,
@@ -803,7 +965,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-thoughtful/dp/B0D12FGJ43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.n3WkSAxhpTbswKNElT43h-JdoM-zLjaYYCmxc7d-8ZeLFMgIZN0lHfxksR4VdgTa91Z7LZVbKHH6G9WiqHS4OJNQr0lVT1GjKmSKxatDOdDZav7GmuXpkIJDxCyjhnc3Qz4so4tLAsNCEqNKMjQdsx0UKTDqjn8JlbT7gfIGfso.E4JaAXtenoPqiHMSqgYbnthT0dus_kQWrFvc4PqMndM&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717064221&s=merchant-items&sr=1-18`,
   },
 
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
@@ -814,7 +976,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 71,
@@ -823,7 +985,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 72,
@@ -832,7 +994,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 73,
@@ -841,7 +1003,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 74,
@@ -850,7 +1012,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 75,
@@ -859,7 +1021,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 76,
@@ -868,7 +1030,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 77,
@@ -877,7 +1039,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
   {
     id: 78,
@@ -886,7 +1048,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Sculpture-Showpiece-Figurine/dp/B0D2B8L272/ref=sr_1_18?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-18`,
   },
 
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
@@ -898,7 +1060,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Figurines-Showpiece-Dashboard/dp/B0D3BRXNPL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aYqgkpOYgvEDR8ZmnUL4XpQwFcIHpXUBsrbvF49ywjxvjGhMDqktLT5WkbC8T0QrUK_tTTlEdO0soZ6U3f-ldoxCdcKSmhyBSw9rwxPcDsRcmU7rrRV5TBOIpv9p-FoAGMpK3SQFMt8I_DMCY8yZ4pGC8wgnBdVjvgUds4ZHhIOYMKcwQ28mSPV-r4nO-h94VYSB5AjxaQRnt6b5Wm_p_0ZNm-bX3whL1XURr2rbxG0.G4SF3evPvrtf90HcX0Fg3WDaVkz5kGImzcT4S0FZaO4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717060801&s=merchant-items&sr=1-1`,
   },
 
   {
@@ -908,7 +1070,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Figurines-Showpiece-Dashboard/dp/B0D3BRXNPL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aYqgkpOYgvEDR8ZmnUL4XpQwFcIHpXUBsrbvF49ywjxvjGhMDqktLT5WkbC8T0QrUK_tTTlEdO0soZ6U3f-ldoxCdcKSmhyBSw9rwxPcDsRcmU7rrRV5TBOIpv9p-FoAGMpK3SQFMt8I_DMCY8yZ4pGC8wgnBdVjvgUds4ZHhIOYMKcwQ28mSPV-r4nO-h94VYSB5AjxaQRnt6b5Wm_p_0ZNm-bX3whL1XURr2rbxG0.G4SF3evPvrtf90HcX0Fg3WDaVkz5kGImzcT4S0FZaO4&dib_tag=se&m=A32EUMRBRYC431&nsdOptOutParam=true&qid=1717060801&s=merchant-items&sr=1-1`,
   },
 
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
@@ -920,7 +1082,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 82,
@@ -929,7 +1091,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 83,
@@ -938,7 +1100,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 84,
@@ -947,7 +1109,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 85,
@@ -956,7 +1118,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 86,
@@ -965,7 +1127,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
   {
     id: 87,
@@ -974,7 +1136,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0CYY6SDF2/ref=sr_1_24?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-24`,
   },
 
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
@@ -986,7 +1148,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 89,
@@ -995,7 +1157,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 90,
@@ -1004,7 +1166,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 91,
@@ -1013,7 +1175,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 92,
@@ -1022,7 +1184,7 @@ const ShopingList12 = [
     title: "Sparrow -5",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
   {
     id: 93,
@@ -1031,7 +1193,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Showpieces-Decoration/dp/B0D2BK7LS5/ref=sr_1_2?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-2`,
   },
 
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
@@ -1043,7 +1205,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7D43N2/ref=sr_1_23?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   {
     id: 95,
@@ -1052,7 +1214,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0D12HLK4L/ref=sr_1_21?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   {
     id: 96,
@@ -1061,7 +1223,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    link: `https://www.amazon.in/FAME-ADDA-Decorative-Collectible-Thoughtful/dp/B0D12HLK4L/ref=sr_1_21?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   {
     id: 97,
@@ -1070,7 +1232,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7D43N2/ref=sr_1_23?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   {
     id: 98,
@@ -1079,7 +1241,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7D43N2/ref=sr_1_23?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   {
     id: 99,
@@ -1088,7 +1250,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    link: `https://www.amazon.in/FAME-ADDA-Multicolor-Decorative-Collectible/dp/B0CZ7D43N2/ref=sr_1_23?m=A32EUMRBRYC431&nsdOptOutParam=true&s=merchant-items&sr=1-23`,
   },
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
 
@@ -1099,7 +1261,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 101,
@@ -1108,7 +1270,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 102,
@@ -1117,7 +1279,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 103,
@@ -1126,7 +1288,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 104,
@@ -1135,7 +1297,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 105,
@@ -1144,7 +1306,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
 
@@ -1155,7 +1317,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 107,
@@ -1164,7 +1326,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 108,
@@ -1173,7 +1335,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 109,
@@ -1182,7 +1344,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 110,
@@ -1191,7 +1353,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 111,
@@ -1200,7 +1362,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 500.0,
     orignialPrice: 1500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
 
@@ -1211,7 +1373,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 113,
@@ -1220,7 +1382,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 114,
@@ -1229,7 +1391,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 115,
@@ -1238,7 +1400,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 116,
@@ -1247,7 +1409,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 117,
@@ -1256,7 +1418,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 118,
@@ -1265,7 +1427,7 @@ const ShopingList12 = [
     title: "Royal style Elephnat ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 119,
@@ -1274,7 +1436,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   //? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique totam itaque, voluptatem id quis asperiores blanditiis eveniet consequuntur corporis?
 
@@ -1285,7 +1447,7 @@ const ShopingList12 = [
     title: "Stylish Budha ShowPice",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 121,
@@ -1294,7 +1456,7 @@ const ShopingList12 = [
     title: "Stylish Old Camera",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 122,
@@ -1303,7 +1465,7 @@ const ShopingList12 = [
     title: "Stylish Coper Lady Face   ",
     price: 70000.0,
     orignialPrice: 13500,
-    link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
+    // link: `https://www.flipkart.com/torque-hatfield-fabric-2-seater-sofa/p/itm32ef26e1c5782?pid=SOFG6EZWDYVNYSQA&lid=LSTSOFG6EZWDYVNYSQAWNAWCK&marketplace=FLIPKART&q=sofa%20set%202%20seater&sattr[]=finish_color&st=finish_color`,
   },
   {
     id: 123,
@@ -1312,7 +1474,7 @@ const ShopingList12 = [
     title: "for Hall stylish Decoration",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    //  link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
   {
     id: 124,
@@ -1321,7 +1483,7 @@ const ShopingList12 = [
     title: "Creating Mirror Dolphine",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
+    // link: `https://www.flipkart.com/wood-you-engineered-4-seater-dining-table/p/itmceae0eeef38d0?pid=DNTGZM2HZHHGA9FZ&lid=LSTDNTGZM2HZHHGA9FZVIFTU6&marketplace=FLIPKART&q=dining+tabel&store=wwe%2Fur9&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f935edfb-00f3-4dfe-831f-801a94629044.DNTGZM2HZHHGA9FZ.SEARCH&ppt=sp&ppn=sp&ssid=tyxm2cdhvk0000001716283762848&qH=25a474446f5abc42`,
   },
   {
     id: 125,
@@ -1330,7 +1492,7 @@ const ShopingList12 = [
     title: "God Of the World Showpice ",
     price: 2500.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
+    // link: `https://www.flipkart.com/finch-fox-eames-replica-faux-leather-dining-chair-cafe-chair-side-chair-accent-chair-leatherette/p/itmfbupzwtuga4f8?pid=DNCFBRXWVNZSU86Z&lid=LSTDNCFBRXWVNZSU86ZH5XTVK&marketplace=FLIPKART&q=cafe+chair&store=wwe%2Fy7b&srno=s_1_23&otracker=search&otracker1=search&fm=Search&iid=373a44d6-162b-4a0f-a46a-6ac9aec74bda.DNCFBRXWVNZSU86Z.SEARCH&ppt=sp&ppn=sp&ssid=muxs5l9eps0000001716283868307&qH=1ba16abd0c3368bb`,
   },
   {
     id: 126,
@@ -1339,7 +1501,7 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 
   {
@@ -1349,9 +1511,10 @@ const ShopingList12 = [
     title: "1980's Musice Player ",
     price: 5000.0,
     orignialPrice: 3500,
-    link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
+    // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 ];
+
 function AllProducts() {
   const [cart, setCart] = useState([]);
 
@@ -1387,7 +1550,10 @@ function AllProducts() {
                 data-aos="fade-up"
                 // data-aos-delay={data.aosDelay}
               />
-              <div className="flex flex-col justify-between bg-gray-200 space-y-2 p-4 w-full transition-all duration-500 ease-in-out">
+
+              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+                {/* <img src={logo} alt="" className="w-24" /> */}
+                <h2 className="text-zinc-600">FameAdda</h2>
                 <h2
                   className="text-lg font-bold"
                   data-aos="fade-up"
@@ -1402,18 +1568,19 @@ function AllProducts() {
                   //   data-aos-delay={data.aosDelay}
                 >
                   <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through">
+                  <p className="text-sm font-bold line-through text-red-600">
                     {data.orignialPrice} RS
                   </p>
                 </div>
                 <Link
                   to={data.link}
                   target="_blank"
-                  className="w-full flex justify-center"
+                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
                 >
-                  <button className="bg-white w-[90%] text-[#B88E2F] py-2 px-6 rounded">
-                    Buy on Filpkart
-                  </button>
+                  <button className=" p-0 m-0">Buy on</button>
+                  <span className="flex justify-center items-center ">
+                    <img src={Buy} alt="" className="w-20 mt-2" />
+                  </span>
                 </Link>
               </div>
             </div>

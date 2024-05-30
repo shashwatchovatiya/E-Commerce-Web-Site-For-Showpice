@@ -1,7 +1,7 @@
 
 
 // import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import bgImage1 from '../../../Image/Shop/HeadingPage/HeadingBackGround.png'
 import { FaChevronRight } from "react-icons/fa";
 
@@ -15,15 +15,16 @@ function Heading() {
 
 
     return (
-        <div className="w-full h-[35vh] text-center md:text-start md:items-start conatiner items-center flex md:justify-center justify-center flex-col"  style={{ backgroundImage: `url(${bgImage1})`,}}>
-            <span className='md:text-4xl text-2xl font-semibold'>
-                {newPath}
-            </span>
-            <span className='flex items-center text-xl'>
-                Home <FaChevronRight /> {newPath}
-            </span>
-        </div>
-    )
+      <div
+        className="w-full h-[35vh] text-center md:text-start md:items-start conatiner items-center flex md:justify-center justify-center flex-col"
+        style={{ backgroundImage: `url(${bgImage1})` }}
+      >
+        <span className="md:text-4xl text-2xl font-semibold">{newPath}</span>
+        <span className="flex items-center text-xl">
+          <Link to="/">Home</Link> <FaChevronRight /> {newPath}
+        </span>
+      </div>
+    );
 }
 
 export default Heading;

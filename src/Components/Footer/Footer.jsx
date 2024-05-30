@@ -22,7 +22,6 @@ export default function Footer() {
   return (
     <div
       style={FooterImg}
-      //   // data-aos="zoom-in"
       className="w-full bg-gray-100 pb-36 dark:bg-gray-800 text-white mt-24"
     >
       <footer className=" conatiner grid md:grid-cols-4 py-10">
@@ -42,20 +41,27 @@ export default function Footer() {
           <div className="flex flex-col space-y-5">
             <div className="flex gap-2 ">
               <CiLocationOn className="w-10" />
-              <span>
+              <Link
+                to="https://maps.app.goo.gl/idbGtcbggVY9XJx47"
+                target="_blank"
+              >
                 99, Nikol - Naroda Rd, behind POONAM BAKERY, Sakar Society,
                 Nikol, Ahmedabad, Gujarat 382350
-              </span>
+              </Link>
             </div>
 
             <div className="flex gap-2">
               <CiMobile3 />
-              <span>+91 9054044429</span>
+              <Link to="tel:+919054044429" target="_blank">
+                +91 9054044429
+              </Link>
             </div>
 
             <div className="flex gap-2">
               <CiMail />
-              <span>fameadda18@gmail.com</span>
+              <Link target="_blank" to="mailto:fameadda18@gmail.com">
+                fameadda18@gmail.com
+              </Link>
             </div>
           </div>
         </div>
@@ -111,9 +117,12 @@ export default function Footer() {
                 Facebook
               </li>
             </Link>
-            <Link className=" flex space-y-5" to="/contact">
+            <Link
+              className=" flex space-y-5"
+              to="https://www.amazon.in/s?i=merchant-items&me=A32EUMRBRYC431&fs=true&ref=sr_pg_1" target="_blank"
+            >
               <li className="hover:translate-x-1 hover:text-primary duration-150">
-                Twitter
+                Amazon
               </li>
             </Link>
             <Link

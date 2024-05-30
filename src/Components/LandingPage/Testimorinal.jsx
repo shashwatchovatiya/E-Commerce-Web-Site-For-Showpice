@@ -40,7 +40,7 @@ function Testimorinal() {
   // const navigationNextRef = React.useRef(null);
 
   return (
-    <div className=' bg-[#FCF8F3] py-16 conatiner md:flex justify-between items-center  w-full md:h-screen md:mt-20 mt-10 bg-cover'>
+    <div className=' bg-[#FCF8F3] py-16 conatiner md:flex justify-between items-center  w-full md:h-screen md:mt-32 mt-10 bg-cover'>
 
         {/* Left Side */}
         <div className="  flex flex-col justify-center md:text-start text-center item center md:w-[25%] sm:h-screen h-auto sm:p-0 py-10 px-5">

@@ -7,7 +7,7 @@ import { MdSupportAgent } from "react-icons/md";
 
 function AditionalInformation() {
   return (
-    <div className='conatiner bg-[#FAF3EA] w-full md:h-[25vh] '>
+    <div className='conatiner bg-[#FAF3EA] w-full mt-10 md:h-[25vh] '>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 py-10">
         <div className="flex gap-4">
           <HiOutlineTrophy className='text-6xl' />

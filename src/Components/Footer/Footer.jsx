@@ -81,7 +81,7 @@ export default function Footer() {
                 About
               </li>
             </Link>
-            <Link className=" flex space-y-5" to="/contact">
+            <Link className=" flex space-y-5" to="/contactus">
               <li className="hover:translate-x-1 hover:text-primary duration-150">
                 Contact
               </li>

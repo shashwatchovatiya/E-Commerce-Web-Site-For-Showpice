@@ -1,5 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+// import img1 from '../../../../Image/Shop/Shopping List/image-1.png'
+// import img2 from '../../../../Image/Shop/Shopping List/image-2.png'
+// import img3 from '../../../../Image/Shop/Shopping List/image-3.png'
+// import img4 from '../../../../Image/Shop/Shopping List/image-4.png'
+// import Buy from "../../Image/Logo/Buynow.png";
+import Buy from "../../../../Image/Logo/Buynow.png";
 import img1001 from "../../../../Image/Landing-Page/Showpice/Budha.jpg";
 import img1002 from "../../../../Image/Landing-Page/Showpice/camera.jpg";
 import img1003 from "../../../../Image/Landing-Page/Showpice/CoperLadyFace.jpg";
@@ -16,7 +23,6 @@ import img1013 from "../../../../Image/Landing-Page/Showpice/TrendigRajasthani3S
 import img1014 from "../../../../Image/Landing-Page/Showpice/WallShowpice.jpg";
 import img1015 from "../../../../Image/Landing-Page/Showpice/RajastaniStatue.jpg";
 import img1016 from "../../../../Image/Landing-Page/Showpice/CarftVatika.jpg";
-import Buy from "../../../../Image/Logo/Buynow.png";
 
 import img1 from "../../../../Image/Changes/Black Barasingha/01.jpg";
 import img2 from "../../../../Image/Changes/Black Barasingha/02.jpg";
@@ -139,7 +145,6 @@ import img103 from "../../../../Image/Changes/Swan rt of 2/wallmantra-table-deco
 import img104 from "../../../../Image/Changes/Swan rt of 2/wallmantra-table-decor-room-decor-garden-decor-showpiece-copy-of-tropical-flamingo-table-accent-set--magic-zrsq.jpg";
 import img105 from "../../../../Image/Changes/Swan rt of 2/wallmantra-table-decor-room-decor-garden-decor-showpiece-luxe-flamingo-figurine-set-of-2-30381251559-magic-ugyf.jpg";
 
-
 import img106 from "../../../../Image/Changes/Tree elephant/01.jpg";
 import img107 from "../../../../Image/Changes/Tree elephant/02.jpg";
 import img108 from "../../../../Image/Changes/Tree elephant/03.jpg";
@@ -164,12 +169,9 @@ import img124 from "../../../../Image/Changes/White Barasingha/05.jpg";
 import img125 from "../../../../Image/Changes/White Barasingha/06.jpg";
 import img126 from "../../../../Image/Changes/White Barasingha/07.jpg";
 import img127 from "../../../../Image/Changes/White Barasingha/08.jpg";
-
-import { Link } from "react-router-dom";
-import Heading from "../Heading";
-import FilterForShopping from "../FilterForShopping";
-
-import { Pagination } from "../Pagination";
+import { IoShareSocial } from "react-icons/io5";
+import { VscArrowSwap } from "react-icons/vsc";
+import { IoIosHeartEmpty } from "react-icons/io";
 import AOS from "aos";
 
 const ShopingList12 = [
@@ -1514,9 +1516,12 @@ const ShopingList12 = [
     // link: `https://www.flipkart.com/bharat-lifestyle-benin-l-shape-fabric-6-seater-sofa/p/itm3d23d982be405?pid=SOFGXGK8TGRZGGSY&lid=LSTSOFGXGK8TGRZGGSYSXXICY&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASFSGWYHG2KDVRGGX%3Bl%3ALSTSFSGWYHG2KDVRGGXB5EINP%3Bpt%3App%3Buid%3A8d73f3a3-1755-11ef-ae6a-8bdc7ed0479d%3B.SOFGXGK8TGRZGGSY&ppt=pp&ppn=pp&ssid=lr35rqgk740000001716284103980&otracker=pp_reco_Similar%2BProducts_1_38.productCard.PMU_HORIZONTAL_Bharat%2BLifestyle%2BBenin%2BL%2BShape%2BFabric%2B6%2BSeater%2B%2BSofa_SOFGXGK8TGRZGGSY_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SOFGXGK8TGRZGGSY`,
   },
 ];
-  
-function AllProducts() {
+
+const itemsPerPage = 20; // Adjust this number based on your preference
+
+const ShopingList = () => {
   const [cart, setCart] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
@@ -1525,72 +1530,85 @@ function AllProducts() {
 
   useEffect(() => {
     AOS.init({
-      duration: 500, // You can set a default duration for the animations
+      duration: 500,
     });
   }, []);
-  return (
-    <>
-      {/* Heading Section */}
-      <Heading />
 
-      {/* Filter path */}
-      <FilterForShopping />
+  const totalPages = Math.ceil(ShopingList12.length / itemsPerPage);
 
-      <div className="conatiner mt-10">
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-          {ShopingList12.map((data) => (
-            <div
-              className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out  overflow-hidden"
-              key={data.id}
-            >
-              <img
-                src={data.img}
-                alt={data.heading}
-                className="w-full h-64 object-fill transform transition-transform duration-500 group-hover:scale-110 "
-                data-aos="fade-up"
-                // data-aos-delay={data.aosDelay}
-              />
+  const handleChangePage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
-              <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
-                {/* <img src={logo} alt="" className="w-24" /> */}
-                <h2 className="text-zinc-600">FameAdda</h2>
-                <h2
-                  className="text-lg font-bold"
-                  data-aos="fade-up"
-                  data-aos-delay={data.aosDelay}
-                >
-                  {data.heading}
-                </h2>
-
-                <div
-                  className="flex justify-between items-center"
-                  data-aos="fade-up"
-                  //   data-aos-delay={data.aosDelay}
-                >
-                  <p className="text-sm font-bold">{data.price} RS</p>
-                  <p className="text-sm font-bold line-through text-red-600">
-                    {data.orignialPrice} RS
-                  </p>
-                </div>
-                <Link
-                  to={data.link}
-                  target="_blank"
-                  className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
-                >
-                  <button className=" p-0 m-0">Buy on</button>
-                  <span className="flex justify-center items-center ">
-                    <img src={Buy} alt="" className="w-20 mt-2" />
-                  </span>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <Pagination />
-    </>
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentItems = ShopingList12.slice(
+    startIndex,
+    startIndex + itemsPerPage
   );
-}
 
-export default AllProducts;
+  return (
+    <div className="container mt-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
+        {currentItems.map((data) => (
+          <div
+            className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out  overflow-hidden"
+            key={data.id}
+          >
+            <img
+              src={data.img}
+              alt={data.heading}
+              className="w-full h-64 object-fill transform transition-transform duration-500 group-hover:scale-110 "
+              data-aos="fade-up"
+            />
+
+            <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
+              <h2 className="text-zinc-600">FameAdda</h2>
+              <h2
+                className="text-lg font-bold"
+                data-aos="fade-up"
+                data-aos-delay={data.aosDelay}
+              >
+                {data.heading}
+              </h2>
+
+              <div
+                className="flex justify-between items-center"
+                data-aos="fade-up"
+              >
+                <p className="text-sm font-bold">{data.price} RS</p>
+                <p className="text-sm font-bold line-through text-red-600">
+                  {data.orignialPrice} RS
+                </p>
+              </div>
+              <Link
+                to={data.link}
+                target="_blank"
+                className="w-full justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
+              >
+                <button className="p-0 m-0">Buy on</button>
+                <span className="flex justify-center items-center ">
+                  <img src={Buy} alt="" className="w-20 mt-2" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-6">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => handleChangePage(index + 1)}
+            className={`mx-1 px-3 py-1 border ${
+              currentPage === index + 1 ? "bg-gray-400" : "bg-white"
+            }`}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ShopingList;

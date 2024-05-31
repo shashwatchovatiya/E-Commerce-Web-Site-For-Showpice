@@ -1516,24 +1516,39 @@ const ShopingList12 = [
   },
 ];
 
+const itemsPerPage = 20; // Adjust this number based on your preference
 
-function ShopingList() {
+const ShopingList = () => {
   const [cart, setCart] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
     console.log("Product added to cart:", product);
   };
+
   useEffect(() => {
     AOS.init({
-      duration: 500, // You can set a default duration for the animations
+      duration: 500,
     });
   }, []);
 
+  const totalPages = Math.ceil(ShopingList12.length / itemsPerPage);
+
+  const handleChangePage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentItems = ShopingList12.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
+
   return (
-    <div className="conatiner mt-10">
+    <div className="container mt-10">
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-        {ShopingList12.map((data) => (
+        {currentItems.map((data) => (
           <div
             className="group relative flex flex-col justify-center items-center transition-all duration-500 ease-in-out  overflow-hidden"
             key={data.id}
@@ -1543,11 +1558,9 @@ function ShopingList() {
               alt={data.heading}
               className="w-full h-64 object-fill transform transition-transform duration-500 group-hover:scale-110 "
               data-aos="fade-up"
-              // data-aos-delay={data.aosDelay}
             />
 
             <div className="flex flex-col space-y-3 justify-between bg-gray-200 p-4 w-full transition-all duration-500 ease-in-out">
-              {/* <img src={logo} alt="" className="w-24" /> */}
               <h2 className="text-zinc-600">FameAdda</h2>
               <h2
                 className="text-lg font-bold"
@@ -1560,7 +1573,6 @@ function ShopingList() {
               <div
                 className="flex justify-between items-center"
                 data-aos="fade-up"
-                //   data-aos-delay={data.aosDelay}
               >
                 <p className="text-sm font-bold">{data.price} RS</p>
                 <p className="text-sm font-bold line-through text-red-600">
@@ -1570,9 +1582,9 @@ function ShopingList() {
               <Link
                 to={data.link}
                 target="_blank"
-                className="w-full  justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
+                className="w-full justify-center bg-white text-lg text-[#B88E2F] py-1 px-6 rounded flex items-center gap-2"
               >
-                <button className=" p-0 m-0">Buy on</button>
+                <button className="p-0 m-0">Buy on</button>
                 <span className="flex justify-center items-center ">
                   <img src={Buy} alt="" className="w-20 mt-2" />
                 </span>
@@ -1581,8 +1593,21 @@ function ShopingList() {
           </div>
         ))}
       </div>
+      <div className="flex justify-center mt-6">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => handleChangePage(index + 1)}
+            className={`mx-1 px-3 py-1 border ${
+              currentPage === index + 1 ? "bg-gray-400" : "bg-white"
+            }`}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default ShopingList;
